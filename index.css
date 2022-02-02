@@ -25,6 +25,7 @@ body {
 body.dark {
 	--body-color: #18191a;
 	--nav-color: #242526;
+	--component-nav: #242526;
 	--side-nav: #242526;
 	--text-color: #ccc;
 	--search-bar: #242526;
@@ -122,7 +123,6 @@ nav .nav-bar .logo a {
 	position: absolute;
 	top: 70px;
 	left: 0;
-	border: 1px solid gray;
 	display: flex;
 	flex-direction: column;
 	padding: 2rem;
