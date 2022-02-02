@@ -83,7 +83,7 @@ nav .nav-bar .logo a {
 	margin: 0 5px;
 }
 
-.nav-links .component {
+.nav-links .component-nav-link {
 	display: none;
 }
 
@@ -285,7 +285,7 @@ body.dark .search-field input {
 
 	nav.active .menu {
 		left: -0%;
-		overflow-y: scroll;
+		overflow-y: auto;
 	}
 
 	nav.active .nav-bar .nav-logo a {
@@ -317,7 +317,7 @@ body.dark .search-field input {
 		margin-top: 20px;
 	}
 
-	nav.active .component {
+	nav.active .component-nav-link {
 		display: block;
 	}
 
