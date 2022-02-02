@@ -145,6 +145,10 @@ nav .nav-bar .logo a {
 	margin: 1rem;
 }
 
+.component-description {
+	margin-left: 250px;
+}
+
 .darkLight-searchBox .dark-light,
 .darkLight-searchBox .searchToggle {
 	height: 40px;
@@ -315,5 +319,9 @@ body.dark .search-field input {
 
 	.component-nav.laptop {
 		display: none;
+	}
+
+	.component-description {
+		margin-left: 0;
 	}
 }
