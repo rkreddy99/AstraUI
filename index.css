@@ -10,6 +10,7 @@
 :root {
 	--body-color: #e4e9f7;
 	--nav-color: #4070f4;
+	--component-nav: #698ef3;
 	--side-nav: #010718;
 	--text-color: white;
 	--search-bar: #f2f2f2;
@@ -71,14 +72,18 @@ nav .nav-bar .logo a {
 	display: none;
 }
 
-.nav-bar .nav-links {
+.nav-links {
 	display: flex;
 	align-items: center;
 }
 
-.nav-bar .nav-links li {
+.nav-links li {
 	list-style: none;
 	margin: 0 5px;
+}
+
+.nav-links .component {
+	display: none;
 }
 
 .nav-links li a {
@@ -93,7 +98,7 @@ nav .nav-bar .logo a {
 .nav-links li a::before {
 	content: '';
 	position: absolute;
-	left: 50%;
+	right: 50%;
 	bottom: 0;
 	transform: translateX(50%);
 	height: 6px;
@@ -112,6 +117,41 @@ nav .nav-bar .logo a {
 	display: flex;
 	align-items: center;
 }
+
+.component-nav {
+	position: absolute;
+	top: 70px;
+	left: 0;
+	border: 1px solid gray;
+	display: flex;
+	flex-direction: column;
+	padding: 2rem;
+	background-color: var(--component-nav);
+	color: var(--text-color);
+	height: calc(100vh - 70px);
+	overflow-y: auto;
+}
+
+.component-nav .component-title {
+	font-size: 25px;
+}
+
+.component-nav .nav-links {
+	flex-direction: column;
+}
+
+.component-nav .nav-links li {
+	margin: 1rem;
+}
+
+/* .component-nav li {
+	list-style: none;
+}
+
+.component-nav a {
+	text-decoration: none;
+	color: var(--text-color);
+} */
 
 .darkLight-searchBox .dark-light,
 .darkLight-searchBox .searchToggle {
@@ -245,6 +285,7 @@ body.dark .search-field input {
 
 	nav.active .menu {
 		left: -0%;
+		overflow-y: scroll;
 	}
 
 	nav.active .nav-bar .nav-logo a {
@@ -274,5 +315,13 @@ body.dark .search-field input {
 	.nav-links li a {
 		display: block;
 		margin-top: 20px;
+	}
+
+	nav.active .component {
+		display: block;
+	}
+
+	.component-nav.laptop {
+		display: none;
 	}
 }

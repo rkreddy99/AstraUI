@@ -1,0 +1,26 @@
+.component-nav {
+	position: absolute;
+	top: 70px;
+	left: 0;
+	border: 1px solid gray;
+	display: flex;
+	flex-direction: column;
+	padding: 2rem;
+	background-color: var(--component-nav);
+	color: var(--text-color);
+	height: calc(100vh - 70px);
+	overflow-y: auto;
+}
+
+.component-nav .component-title {
+	font-size: 25px;
+}
+
+.component-nav li {
+	list-style: none;
+}
+
+.component-nav a {
+	text-decoration: none;
+	color: var(--text-color);
+}
