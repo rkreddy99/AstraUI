@@ -32,7 +32,7 @@ body.dark {
 }
 
 nav {
-	position: fixed;
+	position: sticky;
 	top: 0;
 	left: 0;
 	height: 70px;
@@ -120,11 +120,12 @@ nav .nav-bar .logo a {
 }
 
 .component-nav {
-	position: absolute;
-	top: 70px;
+	width: 250px;
+	float: left;
 	left: 0;
 	display: flex;
 	flex-direction: column;
+	align-items: center;
 	padding: 2rem;
 	background-color: var(--component-nav);
 	color: var(--text-color);
@@ -143,15 +144,6 @@ nav .nav-bar .logo a {
 .component-nav .nav-links li {
 	margin: 1rem;
 }
-
-/* .component-nav li {
-	list-style: none;
-}
-
-.component-nav a {
-	text-decoration: none;
-	color: var(--text-color);
-} */
 
 .darkLight-searchBox .dark-light,
 .darkLight-searchBox .searchToggle {
