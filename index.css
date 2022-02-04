@@ -155,6 +155,7 @@ nav .nav-bar .logo a {
 	color: var(--text-color);
 	height: calc(100vh - 70px);
 	overflow-y: auto;
+	display: block;
 }
 
 .component-nav .component-title {
