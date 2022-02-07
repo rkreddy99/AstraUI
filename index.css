@@ -16,8 +16,10 @@
 	--search-bar: #f2f2f2;
 	--search-text: #010718;
 	--component-title-color: #3459bd;
-	--primary-color: #89b63b;
-	--secondary-color: #c4c4c4;
+	--primary-text-color: #0e3294;
+	--secondary-text-color: #5a5a5a;
+	--primary-bg-color: #96aff1;
+	--secondary-bg-color: rgb(182, 181, 181);
 }
 
 body {
