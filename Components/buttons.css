@@ -75,6 +75,11 @@
 	color: var(--secondary-bg-color);
 }
 
+.btn.btn-link {
+	text-decoration: none;
+	font-size: var(--font-size-md);
+}
+
 .store.button-store p {
 	color: var(--primary-color);
 }
