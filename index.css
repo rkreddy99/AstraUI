@@ -24,12 +24,12 @@
 	--secondary-bg-color: #b6b5b5;
 	--secondary-active-color: #b6b5b5;
 
-	--txt-xxl: 3rem;
-	--txt-xl: 2.5rem;
-	--txt-lg: 2rem;
-	--txt-md: 1.5rem;
-	--txt-sm: 1rem;
-	--txt-xs: 0.5rem;
+	--font-size-xxl: 3rem;
+	--font-size-xl: 2.5rem;
+	--font-size-lg: 2rem;
+	--font-size-md: 1.5rem;
+	--font-size-sm: 1rem;
+	--font-size-xs: 0.5rem;
 
 	--ln-ht-xxl: 4rem;
 	--ln-ht-xl: 3rem;
