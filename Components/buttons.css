@@ -1,0 +1,50 @@
+.btn {
+	background: none;
+	border: none;
+	cursor: pointer;
+	border-radius: 10px;
+	padding: 0.8rem;
+	font-size: var(--font-size-sm);
+}
+
+.btn-primary.btn-solid {
+	background: var(--primary-color);
+	color: white;
+}
+
+.btn-primary.btn-outline {
+	background: none;
+	border: 2px solid var(--primary-color);
+	color: var(--primary-color);
+}
+
+.btn-primary.btn-icon {
+	background-color: transparent;
+	color: var(--primary-color);
+}
+
+.btn-secondary.btn-solid {
+	background: var(--secondary-color);
+	color: white;
+}
+
+.btn-secondary.btn-outline {
+	background: none;
+	border: 2px solid var(--secondary-color);
+	color: var(--secondary-color);
+}
+
+.btn-secondary.btn-icon {
+	background-color: transparent;
+	color: var(--secondary-color);
+}
+
+.btn.btn-floating-action {
+	position: fixed;
+	right: 10px;
+	bottom: 10px;
+}
+
+.store.button-store p {
+	color: var(--primary-color);
+}
