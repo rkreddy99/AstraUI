@@ -5,6 +5,8 @@ const searchToggle = document.querySelector('.searchToggle');
 const searchField = document.querySelector('.search-field');
 const sidebarClose = document.querySelector('.sidebar-close');
 const sidebarOpen = document.querySelector('.sidebar-open');
+const alertCloseBtnsList = document.querySelectorAll('.alert-close');
+console.log(alertCloseBtnsList);
 
 let getMode = localStorage.getItem('mode');
 
@@ -31,12 +33,17 @@ sidebarOpen.addEventListener('click', () => {
 	nav.classList.add('active');
 });
 
-body.addEventListener('click', (e) => {
-	let clickedElmm = e.target;
+// body.addEventListener('click', (e) => {
+// 	let clickedElmm = e.target;
 
-	console.log(clickedElmm.classList);
+// 	if (!clickedElmm.classList.contains('sidebar-open') && !clickedElmm.classList.contains('menu')) {
+// 		nav.classList.remove('active');
+// 	}
+// });
 
-	if (!clickedElmm.classList.contains('sidebar-open') && !clickedElmm.classList.contains('menu')) {
-		nav.classList.remove('active');
-	}
+alertCloseBtnsList.forEach((alertCloseButton) => {
+	console.log(alertCloseButton);
+	alertCloseButton.addEventListener('click', (event) => {
+		console.log('clicked');
+	});
 });

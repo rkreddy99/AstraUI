@@ -7,6 +7,7 @@
 		<link rel="stylesheet" href="../index.css" />
 		<link rel="stylesheet" href="alert.css" />
 		<link href="https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css" rel="stylesheet" />
+		<script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
 		<title>AstraUI</title>
 	</head>
 	<body>
@@ -73,14 +74,92 @@
 			<div class="component-tile avatar-component">
 				<h1 class="component-tile-title">Alert</h1>
 				<p class="component-tile-description">
-					The Avatar component is used to represent a user, and displays the profile picture,
-					initials or fallback icon.
+					The Alert components are used to communicate a state that affects a system, feature or
+					page.
 				</p>
+				<div class="component-subtype">
+					<h2 class="component-subtype-heading">Demo</h2>
+					<p>Here's how to use <span class="highlight">Alert</span> in your project</p>
+					<div class="store flex-col alert-store">
+						<div class="alert alert-primary">
+							<p class="alert-text">This is a primary alert!!!</p>
+							<i class="fas fa-times alert-close"></i>
+						</div>
+					</div>
+					<div class="store">
+						<iframe
+							src="https://carbon.now.sh/embed?bg=rgba%280%2C0%2C0%2C1%29&t=material&wt=none&l=htmlmixed&width=680&ds=true&dsyoff=15px&dsblur=48px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Source+Code+Pro&fs=13px&lh=155%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522alert%2520alert-primary%2522%253EThis%2520is%2520a%2520primary%2520alert%21%21%21%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522alert%2520alert-secondary%2522%253EThis%2520is%2520a%2520secondary%2520alert%21%21%21%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522alert%2520alert-success%2522%253EThis%2520is%2520a%2520success%2520alert%21%21%21%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522alert%2520alert-warning%2522%253EThis%2520is%2520a%2520warning%2520alert%21%21%21%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522alert%2520alert-danger%2522%253EThis%2520is%2520a%2520danger%2520alert%21%21%21%253C%252Fdiv%253E"
+							style="width: 559px; height: 158px; border: 0; transform: scale(1); overflow: hidden"
+							sandbox="allow-scripts allow-same-origin"
+						>
+						</iframe>
+					</div>
+				</div>
 				<div class="component-subtype">
 					<h2 class="component-subtype-heading">Usage</h2>
 					<p>Here's how to use <span class="highlight">Alert</span> in your project</p>
-					<div class="store"></div>
-					<div class="store"></div>
+					<div class="store flex-col alert-store">
+						<div class="alert alert-primary">
+							<p class="alert-text">This is a primary alert!!!</p>
+						</div>
+						<div class="alert alert-secondary">
+							<p class="alert-text">This is a secondary alert!!!</p>
+						</div>
+						<div class="alert alert-success">
+							<p class="alert-text">This is a success alert!!!</p>
+						</div>
+						<div class="alert alert-warning">
+							<p class="alert-text">This is a warning alert!!!</p>
+						</div>
+						<div class="alert alert-danger">
+							<p class="alert-text">This is a danger alert!!!</p>
+						</div>
+					</div>
+					<div class="store">
+						<iframe
+							src="https://carbon.now.sh/embed?bg=rgba%280%2C0%2C0%2C1%29&t=material&wt=none&l=htmlmixed&width=680&ds=true&dsyoff=15px&dsblur=48px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Source+Code+Pro&fs=13px&lh=155%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522alert%2520alert-primary%2522%253EThis%2520is%2520a%2520primary%2520alert%21%21%21%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522alert%2520alert-secondary%2522%253EThis%2520is%2520a%2520secondary%2520alert%21%21%21%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522alert%2520alert-success%2522%253EThis%2520is%2520a%2520success%2520alert%21%21%21%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522alert%2520alert-warning%2522%253EThis%2520is%2520a%2520warning%2520alert%21%21%21%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522alert%2520alert-danger%2522%253EThis%2520is%2520a%2520danger%2520alert%21%21%21%253C%252Fdiv%253E"
+							style="width: 559px; height: 158px; border: 0; transform: scale(1); overflow: hidden"
+							sandbox="allow-scripts allow-same-origin"
+						>
+						</iframe>
+					</div>
+				</div>
+				<div class="component-subtype">
+					<h2 class="component-subtype-heading">Alerts with close icon</h2>
+					<p>
+						These are alerts with close icon, which will remove the alert when close icon is
+						clicked.
+					</p>
+					<div class="store flex-col alert-store">
+						<div class="alert alert-primary">
+							<p class="alert-text">This is a primary alert!!!</p>
+							<i class="fas fa-times alert-close"></i>
+						</div>
+						<div class="alert alert-secondary">
+							<p class="alert-text">This is a secondary alert!!!</p>
+							<i class="fas fa-times alert-close"></i>
+						</div>
+						<div class="alert alert-success">
+							<p class="alert-text">This is a success alert!!!</p>
+							<i class="fas fa-times alert-close"></i>
+						</div>
+						<div class="alert alert-warning">
+							<p class="alert-text">This is a warning alert!!!</p>
+							<i class="fas fa-times alert-close"></i>
+						</div>
+						<div class="alert alert-danger">
+							<p class="alert-text">This is a danger alert!!!</p>
+							<i class="fas fa-times alert-close"></i>
+						</div>
+					</div>
+					<div class="store">
+						<iframe
+							src="https://carbon.now.sh/embed?bg=rgba%280%2C0%2C0%2C1%29&t=material&wt=none&l=htmlmixed&width=680&ds=true&dsyoff=15px&dsblur=48px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Source+Code+Pro&fs=13px&lh=155%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522alert%2520alert-primary%2522%253EThis%2520is%2520a%2520primary%2520alert%21%21%21%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522alert%2520alert-secondary%2522%253EThis%2520is%2520a%2520secondary%2520alert%21%21%21%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522alert%2520alert-success%2522%253EThis%2520is%2520a%2520success%2520alert%21%21%21%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522alert%2520alert-warning%2522%253EThis%2520is%2520a%2520warning%2520alert%21%21%21%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522alert%2520alert-danger%2522%253EThis%2520is%2520a%2520danger%2520alert%21%21%21%253C%252Fdiv%253E"
+							style="width: 559px; height: 158px; border: 0; transform: scale(1); overflow: hidden"
+							sandbox="allow-scripts allow-same-origin"
+						>
+						</iframe>
+					</div>
 				</div>
 			</div>
 		</div>
